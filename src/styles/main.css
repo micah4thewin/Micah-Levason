@@ -1,0 +1,30 @@
+#topcontent {
+  height: 1000px;
+  align-content: center;
+}
+
+#top-overlay {
+  height: 100%;
+  background: rgba( 255, 255, 255, 0.2 );
+  backdrop-filter: blur( 9.5px );
+  -webkit-backdrop-filter: blur( 9.5px );
+  align-content: center;
+
+}
+#animated-gradient-1 {
+  background: linear-gradient(300deg,#bfd7ff,#bfd7ff,#6aa1ff,#6aa1ff,#abffb3,#abffb3,#facbff,#facbff,#c6dcff,#c6dcff);
+  background-size: 600% 600%;
+  animation: gradient-animation 60s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
